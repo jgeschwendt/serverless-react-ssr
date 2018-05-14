@@ -3,6 +3,10 @@ language: bash
 services:
   - docker
 
+env:
+  global:
+    - CONTAINER_NAME=serverless-react/travis
+
 matrix:
   fast_finish: true
 
@@ -11,13 +15,13 @@ cache:
     - $TRAVIS_BUILD_DIR/node_modules
 
 before_install:
-  - docker build -t serverless-react/travis
+  - docker build -t $CONTAINER_NAME .
 
 install:
-  - docker run --rm --tty --volume $TRAVIS_BUILD_DIR:/var/task --workdir /var/task serverless-react/travis yarn
+  - docker run --rm --tty --volume $TRAVIS_BUILD_DIR:/var/task --workdir /var/task $CONTAINER_NAME yarn
 
 script:
-  - docker run --rm --tty --volume $TRAVIS_BUILD_DIR:/var/task --workdir /var/task serverless-react/travis yarn run tsc
-  - docker run --rm --tty --volume $TRAVIS_BUILD_DIR:/var/task --workdir /var/task serverless-react/travis yarn run tslint
-  - docker run --rm --tty --volume $TRAVIS_BUILD_DIR:/var/task --workdir /var/task serverless-react/travis yarn run build:static
-  - docker run --rm --tty --volume $TRAVIS_BUILD_DIR:/var/task --workdir /var/task serverless-react/travis yarn run build:server
+  - docker run --rm --tty --volume $TRAVIS_BUILD_DIR:/var/task --workdir /var/task $CONTAINER_NAME yarn run tsc
+  - docker run --rm --tty --volume $TRAVIS_BUILD_DIR:/var/task --workdir /var/task $CONTAINER_NAME yarn run tslint
+  - docker run --rm --tty --volume $TRAVIS_BUILD_DIR:/var/task --workdir /var/task $CONTAINER_NAME yarn run build:static
+  - docker run --rm --tty --volume $TRAVIS_BUILD_DIR:/var/task --workdir /var/task $CONTAINER_NAME yarn run build:server
