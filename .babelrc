@@ -1,0 +1,45 @@
+{
+  "plugins": [
+    ["module-resolver", {
+      "extensions": [ ".ts", ".tsx" ],
+      "root": [ "./src" ]
+    }],
+    ["styled-components", {
+      "displayName": false,
+      "preprocess": false,
+      "ssr": true
+    }]
+  ],
+  "env": {
+    "development": {
+      "presets": [
+        ["@babel/env", {
+          "targets": { "browsers": [] }
+        }],
+        ["@babel/stage-0", { "decoratorsLegacy": true }],
+        "@babel/react",
+        "@babel/typescript"
+      ]
+    },
+    "production": {
+      "presets": [
+        ["@babel/env", {
+          "targets": { "browsers": [ "last 2 versions" ] }
+        }],
+        ["@babel/stage-0", { "decoratorsLegacy": true }],
+        "@babel/react",
+        "@babel/typescript"
+      ]
+    },
+    "serverless": {
+      "presets": [
+        [ "@babel/env", {
+          "targets": { "node": "6.10" }
+        }],
+        ["@babel/stage-0", { "decoratorsLegacy": true }],
+        "@babel/react",
+        "@babel/typescript"
+      ]
+    }
+  }
+}

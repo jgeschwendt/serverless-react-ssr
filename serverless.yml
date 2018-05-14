@@ -1,0 +1,53 @@
+service: serverless-react
+
+frameworkVersion: '>=1.9.0 <2.0.0'
+
+custom:
+  stage: ${env:stage, self:provider.stage}
+  client:
+    bucketName: ${env:APP_DOMAIN_NAME}
+    distributionFolder: dist
+  webpack:
+    includeModules:
+      forceInclude:
+        - react-dom # required through react-apollo (renderToStringWithData)
+    packager: yarn
+    webpackConfig: ./config/webpack/webpack.config.server.js
+
+package:
+  individually: true
+
+plugins:
+  - serverless-finch
+  - serverless-webpack # https://github.com/serverless-heaven/serverless-webpack#usage-with-serverless-offline
+  - serverless-offline
+
+provider:
+  name: aws
+  region: us-east-1
+  runtime: nodejs6.10
+  deploymentBucket: ${env:S3_DEPLOYMENT_BUCKET}
+  environment:
+    STAGE: ${self:custom.stage}
+
+functions:
+  website:
+    name: serverless-react-${self:custom.stage}
+    handler: handler.website
+    events:
+      - http:
+          cors: true
+          integration: lambda-proxy
+          method: get
+          path: /
+      - http:
+          cors: true
+          integration: lambda-proxy
+          method: get
+          path: /{proxy+}
+
+# CloudFormation Configuration
+# resources:
+#   Mappings:
+#     RegionMap: ${file(config/aws/cloudformation/addons/region-map.yml)}
+#   Resources: ${file(config/aws/cloudformation/template.yml)}

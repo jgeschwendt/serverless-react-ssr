@@ -1,0 +1,27 @@
+version: '3'
+services:
+  website.server:
+    container_name: serverless-react.website.server
+    command: yarn run start:server
+    env_file:
+      - ${ENV_FILE}
+    image: ${CONTAINER_NAME}
+    ports:
+      - 3001:3001
+    restart: always
+    volumes:
+      - .:/var/task
+    working_dir: /var/task
+
+  website.static:
+    container_name: serverless-react.website.static
+    command: yarn run start:static
+    env_file:
+      - ${ENV_FILE}
+    image: ${CONTAINER_NAME}
+    ports:
+      - 3000:3000
+    restart: always
+    volumes:
+      - .:/var/task
+    working_dir: /var/task
