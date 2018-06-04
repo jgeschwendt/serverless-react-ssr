@@ -1,44 +1,137 @@
 {
-  "plugins": [
-    ["module-resolver", {
-      "extensions": [ ".ts", ".tsx" ],
-      "root": [ "./src" ]
-    }],
-    ["styled-components", {
-      "displayName": false,
-      "preprocess": false,
-      "ssr": true
-    }]
-  ],
   "env": {
     "development": {
       "presets": [
-        ["@babel/env", {
-          "targets": { "browsers": [] }
-        }],
-        ["@babel/stage-0", { "decoratorsLegacy": true }],
+        [
+          "@babel/env",
+          {
+            "targets": {
+              "browsers": []
+            }
+          }
+        ],
+        [
+          "@babel/stage-0",
+          {
+            "decoratorsLegacy": true
+          }
+        ],
         "@babel/react",
         "@babel/typescript"
+      ],
+      "plugins": [
+        "loadable-components/babel",
+        [
+          "module-resolver",
+          {
+            "extensions": [
+              ".ts",
+              ".tsx"
+            ],
+            "root": [
+              "./src"
+            ]
+          }
+        ],
+        [
+          "styled-components",
+          {
+            "ssr": true,
+            "displayName": false,
+            "preprocess": false
+          }
+        ]
       ]
     },
     "production": {
       "presets": [
-        ["@babel/env", {
-          "targets": { "browsers": [ "last 2 versions" ] }
-        }],
-        ["@babel/stage-0", { "decoratorsLegacy": true }],
+        [
+          "@babel/env",
+          {
+            "targets": {
+              "browsers": [
+                "last 2 versions"
+              ]
+            }
+          }
+        ],
+        [
+          "@babel/stage-0",
+          {
+            "decoratorsLegacy": true
+          }
+        ],
         "@babel/react",
         "@babel/typescript"
+      ],
+      "plugins": [
+        "loadable-components/babel",
+        [
+          "module-resolver",
+          {
+            "extensions": [
+              ".ts",
+              ".tsx"
+            ],
+            "root": [
+              "./src"
+            ]
+          }
+        ],
+        [
+          "styled-components",
+          {
+            "ssr": true,
+            "displayName": false,
+            "preprocess": true
+          }
+        ]
       ]
     },
     "serverless": {
       "presets": [
-        [ "@babel/env", {
-          "targets": { "node": "6.10" }
-        }],
-        ["@babel/stage-0", { "decoratorsLegacy": true }],
+        [
+          "@babel/env",
+          {
+            "targets": {
+              "node": "6.10"
+            }
+          }
+        ],
+        [
+          "@babel/stage-0",
+          {
+            "decoratorsLegacy": true
+          }
+        ],
         "@babel/react",
         "@babel/typescript"
+      ],
+      "plugins": [
+        "loadable-components/babel",
+        "babel-plugin-dynamic-import-node",
+        [
+          "module-resolver",
+          {
+            "extensions": [
+              ".js",
+              ".jsx",
+              ".ts",
+              ".tsx"
+            ],
+            "root": [
+              "./src"
+            ]
+          }
+        ],
+        [
+          "styled-components",
+          {
+            "ssr": true,
+            "displayName": false,
+            "preprocess": false
+          }
+        ]
       ]
     }
   }
