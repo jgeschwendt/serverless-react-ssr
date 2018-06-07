@@ -60,6 +60,12 @@ jspm_packages/
 # next.js build output
 .next
 
-.webpack
+.env
+.env.*
+!.env.example
 
+.DS_Store
+
+.serverless
+.webpack
 dist

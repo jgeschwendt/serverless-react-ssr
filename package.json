@@ -6,10 +6,10 @@
   "scripts": {
     "build:server": "BABEL_ENV=serverless NODE_ENV=production sls webpack",
     "build:static": "BABEL_ENV=production NODE_ENV=production webpack --config config/webpack/webpack.config.static.js",
-    "deploy:dev": "npm-run-all --serial tsc build:static deploy:dev:server deploy:dev:static",
+    "deploy:dev": "npm-run-all --serial build:static deploy:dev:server deploy:dev:static",
     "deploy:dev:server": "BABEL_ENV=serverless NODE_ENV=production sls deploy --stage dev",
     "deploy:dev:static": "sls client deploy --no-confirm --stage dev",
-    "deploy:prod": "npm-run-all --serial tsc build:static deploy:prod:server deploy:prod:static",
+    "deploy:prod": "npm-run-all --serial build:static deploy:prod:server deploy:prod:static",
     "deploy:prod:server": "BABEL_ENV=serverless NODE_ENV=production sls deploy --stage prod",
     "deploy:prod:static": "sls client deploy --no-confirm --stage prod",
     "profile": "BABEL_ENV=production NODE_ENV=production webpack --config config/webpack/webpack.config.static.js --profile --json > dist/stats.json && webpack-bundle-analyzer dist/stats.json dist --mode static --no-open --report dist/report.html",
