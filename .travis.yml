@@ -28,8 +28,8 @@ stages:
 jobs:
   include:
     - script:
-        - ./scripts/ci/travis/check.sh
-        - ./scripts/ci/travis/build.sh
+        - ./scripts/ci/check.sh
+        - ./scripts/ci/build.sh
       stage: build
     - if: branch IN (master)
       script:
