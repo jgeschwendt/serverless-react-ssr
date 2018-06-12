@@ -608,11 +608,11 @@
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.50"
 
-"@babel/plugin-syntax-typescript@7.0.0-beta.50":
-  version "7.0.0-beta.50"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-typescript/-/plugin-syntax-typescript-7.0.0-beta.50.tgz#478c7bfdd16365929d02110078633e93cf4a6752"
+"@babel/plugin-syntax-typescript@7.0.0-beta.49":
+  version "7.0.0-beta.49"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-typescript/-/plugin-syntax-typescript-7.0.0-beta.49.tgz#332b6d17c28904981465f69f111646ef7a5ede10"
   dependencies:
-    "@babel/helper-plugin-utils" "7.0.0-beta.50"
+    "@babel/helper-plugin-utils" "7.0.0-beta.49"
 
 "@babel/plugin-transform-arrow-functions@7.0.0-beta.49":
   version "7.0.0-beta.49"
@@ -822,12 +822,12 @@
   dependencies:
     "@babel/helper-plugin-utils" "7.0.0-beta.49"
 
-"@babel/plugin-transform-typescript@7.0.0-beta.50":
-  version "7.0.0-beta.50"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.0.0-beta.50.tgz#8576afd88144bdddbca8da3a500f5c3a318ac45e"
+"@babel/plugin-transform-typescript@7.0.0-beta.49":
+  version "7.0.0-beta.49"
+  resolved "https://registry.yarnpkg.com/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.0.0-beta.49.tgz#1f81fb756e033df6c396b2fffc1ba573a97c8a19"
   dependencies:
-    "@babel/helper-plugin-utils" "7.0.0-beta.50"
-    "@babel/plugin-syntax-typescript" "7.0.0-beta.50"
+    "@babel/helper-plugin-utils" "7.0.0-beta.49"
+    "@babel/plugin-syntax-typescript" "7.0.0-beta.49"
 
 "@babel/plugin-transform-unicode-regex@7.0.0-beta.49":
   version "7.0.0-beta.49"
@@ -938,12 +938,12 @@
     "@babel/plugin-syntax-dynamic-import" "7.0.0-beta.50"
     "@babel/plugin-syntax-import-meta" "7.0.0-beta.50"
 
-"@babel/preset-typescript@7.0.0-beta.50":
-  version "7.0.0-beta.50"
-  resolved "https://registry.yarnpkg.com/@babel/preset-typescript/-/preset-typescript-7.0.0-beta.50.tgz#4e96b32eb660017af1fe717f3fb64e5b7bb77455"
+"@babel/preset-typescript@7.0.0-beta.49":
+  version "7.0.0-beta.49"
+  resolved "https://registry.yarnpkg.com/@babel/preset-typescript/-/preset-typescript-7.0.0-beta.49.tgz#20a3c4a2f815efe7416f756b433c0fd9907a47ad"
   dependencies:
-    "@babel/helper-plugin-utils" "7.0.0-beta.50"
-    "@babel/plugin-transform-typescript" "7.0.0-beta.50"
+    "@babel/helper-plugin-utils" "7.0.0-beta.49"
+    "@babel/plugin-transform-typescript" "7.0.0-beta.49"
 
 "@babel/template@7.0.0-beta.49":
   version "7.0.0-beta.49"
