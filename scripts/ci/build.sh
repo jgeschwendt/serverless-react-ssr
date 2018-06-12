@@ -3,7 +3,7 @@
 set -u -e -o pipefail
 
 docker run \
-  --env APP_HOSTED_ZONE=$APP_HOSTED_ZONE
+  --env APP_HOSTED_ZONE=$APP_HOSTED_ZONE \
   --rm \
   --tty \
   --volume $TRAVIS_BUILD_DIR:/var/task \
@@ -11,7 +11,7 @@ docker run \
   $CONTAINER_NAME yarn run build:static
 
 docker run \
-  --env APP_HOSTED_ZONE=$APP_HOSTED_ZONE
+  --env APP_HOSTED_ZONE=$APP_HOSTED_ZONE \
   --rm \
   --tty \
   --volume $TRAVIS_BUILD_DIR:/var/task \
