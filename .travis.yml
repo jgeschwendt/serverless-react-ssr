@@ -18,10 +18,20 @@ before_install:
   - docker build -t $CONTAINER_NAME .
 
 install:
-  - docker run --rm --tty --volume $TRAVIS_BUILD_DIR:/var/task --workdir /var/task $CONTAINER_NAME yarn
+  - travis_retry ./scripts/ci/install.sh
 
-script:
-  - docker run --rm --tty --volume $TRAVIS_BUILD_DIR:/var/task --workdir /var/task $CONTAINER_NAME yarn run tsc
-  - docker run --rm --tty --volume $TRAVIS_BUILD_DIR:/var/task --workdir /var/task $CONTAINER_NAME yarn run tslint
-  - docker run --rm --tty --volume $TRAVIS_BUILD_DIR:/var/task --workdir /var/task $CONTAINER_NAME yarn run build:static
-  - docker run --rm --tty --volume $TRAVIS_BUILD_DIR:/var/task --workdir /var/task $CONTAINER_NAME yarn run build:server
+stages:
+  - build
+  - test
+  - deploy
+
+jobs:
+  include:
+    - script:
+        - ./scripts/ci/travis/check.sh
+        - ./scripts/ci/travis/build.sh
+      stage: build
+    - if: branch IN (master)
+      script:
+        - travis_retry ./scripts/ci/deploy.sh
+      stage: deploy
