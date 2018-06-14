@@ -83,7 +83,7 @@
           {
             "ssr": true,
             "displayName": false,
-            "preprocess": true
+            "preprocess": false
           }
         ]
       ]
