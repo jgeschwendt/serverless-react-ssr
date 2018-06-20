@@ -40,8 +40,8 @@
     "graphql": "0.13.2"
   },
   "dependencies": {
-    "apollo-cache-inmemory": "1.2.4",
-    "apollo-client": "2.3.4",
+    "apollo-cache-inmemory": "1.2.5",
+    "apollo-client": "2.3.5",
     "apollo-link-http": "1.5.4",
     "apollo-link-schema": "1.1.0",
     "graphql": "0.13.2",
