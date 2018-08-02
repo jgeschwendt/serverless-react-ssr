@@ -70,7 +70,7 @@
     "@babel/preset-typescript": "7.0.0-beta.54",
     "@types/react": "16.4.7",
     "@types/react-dom": "16.0.6",
-    "aws-sdk": "2.285.1",
+    "aws-sdk": "2.286.1",
     "babel-loader": "8.0.0-beta.4",
     "babel-plugin-dynamic-import-node": "2.0.0",
     "babel-plugin-module-resolver": "3.1.1",
