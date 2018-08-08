@@ -1643,9 +1643,9 @@ atob@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.1.tgz#ae2d5a729477f289d60dd7f96a6314a22dd6c22a"
 
-aws-sdk@2.288.0:
-  version "2.288.0"
-  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.288.0.tgz#9665f4a908cb2048bc1af6e0ef5084c5bf96a6c8"
+aws-sdk@2.289.0:
+  version "2.289.0"
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.289.0.tgz#8921765288526db81d7fe0bda5dba3e29c15218e"
   dependencies:
     buffer "4.9.1"
     events "1.1.1"
