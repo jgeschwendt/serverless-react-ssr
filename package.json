@@ -63,11 +63,10 @@
     "styled-components": "3.4.2"
   },
   "devDependencies": {
-    "@babel/core": "7.0.0-beta.54",
-    "@babel/preset-env": "7.0.0-beta.54",
-    "@babel/preset-react": "7.0.0-beta.54",
-    "@babel/preset-stage-0": "7.0.0-beta.54",
-    "@babel/preset-typescript": "7.0.0-beta.54",
+    "@babel/core": "7.0.0-rc.1",
+    "@babel/preset-env": "7.0.0-rc.1",
+    "@babel/preset-react": "7.0.0-rc.1",
+    "@babel/preset-typescript": "7.0.0-rc.1",
     "@types/react": "16.4.9",
     "@types/react-dom": "16.0.7",
     "aws-sdk": "2.290.0",

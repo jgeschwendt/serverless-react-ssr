@@ -2,136 +2,39 @@
   "env": {
     "development": {
       "presets": [
-        [
-          "@babel/env",
-          {
-            "targets": {
-              "browsers": []
-            }
-          }
-        ],
-        [
-          "@babel/stage-0",
-          {
-            "decoratorsLegacy": true
-          }
-        ],
-        "@babel/react",
-        "@babel/typescript"
+        ["@babel/env"],
+        ["@babel/react"],
+        ["@babel/typescript"]
       ],
       "plugins": [
-        "loadable-components/babel",
-        [
-          "module-resolver",
-          {
-            "extensions": [
-              ".ts",
-              ".tsx"
-            ],
-            "root": [
-              "./src"
-            ]
-          }
-        ],
-        [
-          "styled-components",
-          {
-            "ssr": true,
-            "displayName": false,
-            "preprocess": false
-          }
-        ]
+        ["module-resolver", { "extensions": [".ts", ".tsx"], "root": ["./src"]}],
+        ["loadable-components/babel"],
+        ["styled-components", { "displayName": false, "preprocess": false, "ssr": true }]
       ]
     },
     "production": {
       "presets": [
-        [
-          "@babel/env",
-          {
-            "targets": {
-              "browsers": [
-                "last 2 versions"
-              ]
-            }
-          }
-        ],
-        [
-          "@babel/stage-0",
-          {
-            "decoratorsLegacy": true
-          }
-        ],
-        "@babel/react",
-        "@babel/typescript"
+        ["@babel/env", { "targets": { "browsers": ["last 2 versions"] }}],
+        ["@babel/react"],
+        ["@babel/typescript"]
       ],
       "plugins": [
-        "loadable-components/babel",
-        [
-          "module-resolver",
-          {
-            "extensions": [
-              ".ts",
-              ".tsx"
-            ],
-            "root": [
-              "./src"
-            ]
-          }
-        ],
-        [
-          "styled-components",
-          {
-            "ssr": true,
-            "displayName": false,
-            "preprocess": false
-          }
-        ]
+        ["module-resolver", { "extensions": [".ts", ".tsx"], "root": ["./src"]}],
+        ["loadable-components/babel"],
+        ["styled-components", { "displayName": false, "preprocess": false, "ssr": true }]
       ]
     },
     "serverless": {
       "presets": [
-        [
-          "@babel/env",
-          {
-            "targets": {
-              "node": "6.10"
-            }
-          }
-        ],
-        [
-          "@babel/stage-0",
-          {
-            "decoratorsLegacy": true
-          }
-        ],
-        "@babel/react",
-        "@babel/typescript"
+        ["@babel/env", { "targets": { "node": "8.10" }}],
+        ["@babel/react"],
+        ["@babel/typescript"]
       ],
       "plugins": [
-        "loadable-components/babel",
-        "babel-plugin-dynamic-import-node",
-        [
-          "module-resolver",
-          {
-            "extensions": [
-              ".js",
-              ".jsx",
-              ".ts",
-              ".tsx"
-            ],
-            "root": [
-              "./src"
-            ]
-          }
-        ],
-        [
-          "styled-components",
-          {
-            "ssr": true,
-            "displayName": false,
-            "preprocess": false
-          }
-        ]
+        ["module-resolver", { "extensions": [".ts", ".tsx"], "root": ["./src"]}],
+        ["babel-plugin-dynamic-import-node"],
+        ["loadable-components/babel"],
+        ["styled-components", { "displayName": false, "preprocess": false, "ssr": true }]
       ]
     }
   }
