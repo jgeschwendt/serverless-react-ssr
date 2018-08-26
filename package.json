@@ -67,7 +67,7 @@
     "@babel/preset-env": "7.0.0-rc.3",
     "@babel/preset-react": "7.0.0-rc.3",
     "@babel/preset-typescript": "7.0.0-rc.3",
-    "@types/react": "16.4.11",
+    "@types/react": "16.4.12",
     "@types/react-dom": "16.0.7",
     "aws-sdk": "2.302.0",
     "babel-loader": "8.0.0-beta.6",
