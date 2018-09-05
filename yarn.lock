@@ -7150,9 +7150,9 @@ sisteransi@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-0.1.1.tgz#5431447d5f7d1675aac667ccd0b865a4994cb3ce"
 
-sitemap@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/sitemap/-/sitemap-2.0.0.tgz#e9d9a6feea027cfe97cc082d93804549f6b2a3eb"
+sitemap@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/sitemap/-/sitemap-2.0.1.tgz#24f9ae89efeadd80e85e91b7247165497a5e655b"
   dependencies:
     lodash "^4.17.10"
     url-join "^4.0.0"
