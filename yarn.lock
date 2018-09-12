@@ -1566,10 +1566,11 @@ babel-plugin-module-resolver@3.1.1:
     reselect "^3.0.1"
     resolve "^1.4.0"
 
-babel-plugin-styled-components@1.7.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.7.0.tgz#2bc9c5ed58fc3ab239299826274389a43d6ad9c9"
+babel-plugin-styled-components@1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.7.1.tgz#c291d2a48ec77bb0828275b87696b6594a2f80f9"
   dependencies:
+    "@babel/helper-annotate-as-pure" "^7.0.0"
     lodash "^4.17.10"
 
 babel-plugin-syntax-dynamic-import@^6.18.0:
