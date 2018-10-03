@@ -8190,10 +8190,10 @@ serverless-finch@2.3.2:
     minimatch "^3.0.4"
     prompt-confirm "^1.2.0"
 
-serverless-offline@3.25.16:
-  version "3.25.16"
-  resolved "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-3.25.16.tgz#d52cec764cd6fd77f90971741000ade7d38136f9"
-  integrity sha512-FOM6V2VCmiwFUR33fVtnaPM0Ug7rPbVFTNqgASqKS/GpOs6oXw+fkPooi/pYby8SNtZL7/dOKy5+kt+hQQIidA==
+serverless-offline@3.26.0:
+  version "3.26.0"
+  resolved "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-3.26.0.tgz#b9d9ace4ebe9a27123fe3f484696b842d9511a4e"
+  integrity sha512-KLMTSLIvLau+4M8TB0zoy3l8HxE4RXG8DFNuihDgRFLtFxZs5TFqqJA9fDIhVhSVem9EEQqpWRbiHBaU3KBwxQ==
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/register" "^7.0.0"
