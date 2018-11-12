@@ -1,5 +1,5 @@
 {
-  "name": "serverless-react",
+  "name": "serverless-react-ssr",
   "version": "0.1.0",
   "description": "Serverless React Project Template",
   "main": "handler.ts",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jgeschwendt/serverless-react.git"
+    "url": "git+https://github.com/jgeschwendt/serverless-react-ssr.git"
   },
   "keywords": [
     "aws",
@@ -27,9 +27,9 @@
   "author": "jlg",
   "license": "SEE LICENSE IN LICENSE",
   "bugs": {
-    "url": "https://github.com/jgeschwendt/serverless-react/issues"
+    "url": "https://github.com/jgeschwendt/serverless-react-ssr/issues"
   },
-  "homepage": "https://github.com/jgeschwendt/serverless-react#readme",
+  "homepage": "https://github.com/jgeschwendt/serverless-react-ssr#readme",
   "private": true,
   "resolutions": {
     "graphql": "14.0.2"
