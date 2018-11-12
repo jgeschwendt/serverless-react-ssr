@@ -26,7 +26,11 @@ build-static:
 
 deploy:
 	@make stop-docker
-	@docker run --env-file $(ENV_FILE) $(NODE_CONTAINER) yarn run deploy:$(ENV)
+	@docker run --env-file .env.master $(NODE_CONTAINER) yarn run tsc
+	@docker run --env-file .env.master $(NODE_CONTAINER) yarn run tslint
+	@docker run --env-file .env.master $(NODE_CONTAINER) yarn run build:static
+	@docker run --env-file .env.master $(NODE_CONTAINER) serverless deploy --stage master
+  @docker run --env-file .env.master $(NODE_CONTAINER) serverless client deploy --no-confirm --stage master
 
 check:
 	@make tsc

@@ -33,7 +33,7 @@ if [ ${TRAVIS_BRANCH:-} == "master" ]; then
     --tty \
     --volume $TRAVIS_BUILD_DIR:/var/task \
     --workdir /var/task \
-    $CONTAINER_NAME yarn run deploy:dev:server
+    $CONTAINER_NAME serverless client deploy --no-confirm --stage master
 
   docker run \
     --env AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID \
@@ -47,7 +47,7 @@ if [ ${TRAVIS_BRANCH:-} == "master" ]; then
     --tty \
     --volume $TRAVIS_BUILD_DIR:/var/task \
     --workdir /var/task \
-    $CONTAINER_NAME yarn run deploy:dev:static
+    $CONTAINER_NAME serverless deploy --stage master
 
   exit 0
 fi
