@@ -1,4 +1,4 @@
-service: serverless-react
+service: serverless-react-ssr
 
 frameworkVersion: '>=1.9.0 <2.0.0'
 
@@ -89,6 +89,17 @@ resources:
         S3WebsiteEndpoint: s3-website-us-west-2.amazonaws.com
 
   Resources:
+    ApiGatewayMethodProxyVarGet:
+      Properties:
+        Integration:
+          CacheKeyParameters:
+            - method.request.path.proxy
+          CacheNamespace: ApiGatewayMethodProxyVarGetCacheNS
+          RequestParameters:
+            integration.request.path.proxy: method.request.path.proxy
+        RequestParameters:
+          method.request.path.proxy: true
+
     ApiGatewayBasePathMapping:
       DependsOn: ApiGatewayDomainName
       Type: AWS::ApiGateway::BasePathMapping
@@ -166,6 +177,9 @@ resources:
         AuthorizationType: NONE
         HttpMethod: GET
         Integration:
+          CacheKeyParameters:
+            - method.request.path.proxy
+          CacheNamespace: ApiGatewayMethodStaticProxyVarGetCacheNS
           Credentials: {'Fn::Join': ['', ['arn:aws:iam::', {Ref: AWS::AccountId}, ':role/', {Ref: ApiGatewayIamRoleExecution}]]}
           IntegrationHttpMethod: GET
           IntegrationResponses:

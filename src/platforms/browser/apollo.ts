@@ -8,7 +8,7 @@ export default class extends ApolloClient<any> {
     super({
       cache: new InMemoryCache({
         fragmentMatcher: new IntrospectionFragmentMatcher({
-          introspectionQueryResultData: window.__APOLLO_FRAGS__
+          introspectionQueryResultData: window.__APOLLO_SCHEMA__
         })
       }).restore(window.__APOLLO_STATE__),
       link: new HttpLink({ fetch, uri }),

@@ -1,6 +1,5 @@
 export default ({
   content,
-  context,
   extractor,
   helmet,
   introspectionQueryResultData,
@@ -21,10 +20,9 @@ export default ({
 <body ${helmet.bodyAttributes.toString()}>
   <div id="root">${content}</div>
   <script>${`
+    window.__APOLLO_SCHEMA__=${JSON.stringify(introspectionQueryResultData).replace(/</g, '\\u003c')};
     window.__APOLLO_STATE__=${JSON.stringify(state).replace(/</g, '\\u003c')};
-    window.__APOLLO_FRAGS__=${JSON.stringify(introspectionQueryResultData).replace(/</g, '\\u003c')};
-    window.__LAMBDA_STATE__=${JSON.stringify(context).replace(/</g, '\\u003c')};
-    window.__REDUX_STATE__=${JSON.stringify(store.getState()).replace(/</g, '\\u003c')};
+    window.__REDUX_STORE__=${JSON.stringify(store.getState()).replace(/</g, '\\u003c')};
   `}</script>
   ${extractor.getScriptTags()}
   <script src="/static/vendors.js"></script>

@@ -13,11 +13,10 @@ import App from './components/App'
 
 const store = createStore(reducer , window.__REDUX_STATE__, (window['__REDUX_DEVTOOLS_EXTENSION_COMPOSE__'] || compose)())
 
-export default (element, context = {}) => {
+export default (element) => {
   loadableReady(() => {
     hydrate(createElement(App, {
       client: new ApolloClient({ uri: `https:${process.env.API_DOMAIN_NAME}` }),
-      context,
       location: window.location.pathname || '/',
       routes,
       store,

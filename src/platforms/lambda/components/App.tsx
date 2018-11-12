@@ -8,7 +8,6 @@ import { StyleSheetManager, ThemeProvider } from 'styled-components'
 
 export default ({
   client,
-  context,
   extractor,
   location,
   routes,
@@ -22,7 +21,7 @@ export default ({
         <ApolloProvider client={client}>
           <StyleSheetManager sheet={sheet}>
             <ThemeProvider theme={theme}>
-              <StaticRouter location={location} context={context}>
+              <StaticRouter location={location}>
                 {renderRoutes(routes)}
               </StaticRouter>
             </ThemeProvider>

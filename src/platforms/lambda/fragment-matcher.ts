@@ -22,9 +22,12 @@ export default ({ uri }) => fetch(uri, {
 })
 .then(result => result.json())
 .then(result => {
-  // here we're filtering out any type information unrelated to unions or interfaces
-  result.data.__schema.types = result.data.__schema.types.filter(
-    type => type.possibleTypes !== null
-  )
-  return result.data
+  if (result && result.data && result.data.__schema && result.data.__schema.types) {
+    // here we're filtering out any type information unrelated to unions or interfaces
+    result.data.__schema.types = result.data.__schema.types.filter(
+      type => type.possibleTypes !== null
+    )
+    return result.data
+  }
+  return null
 })

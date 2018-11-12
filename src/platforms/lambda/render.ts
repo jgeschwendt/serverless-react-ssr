@@ -15,18 +15,20 @@ import reducer from '../../app/reducer'
 import routes from '../../app/routes'
 import theme from '../../app/theme'
 
-export default async ({ context, location }) => {
+export default async ({ location }) => {
   const { client, introspectionQueryResultData } = await LambdaContainerCache
+  const statsFile = process.env.IS_OFFLINE
+    ? resolve('.webpack/service/loadable-stats.json')
+    : resolve('loadable-stats.json')
   const store = createStore(reducer)
-
   await client.resetStore() // the cache persists between lambda requests
-  const extractor = new ChunkExtractor({ entrypoints: [], statsFile: resolve('.webpack/service/loadable-stats.json') })
+
+  const extractor = new ChunkExtractor({ entrypoints: [], statsFile })
   const sheet = new ServerStyleSheet()
 
   const content = await renderToStringWithData(
     createElement(App, {
       client,
-      context,
       extractor,
       location,
       routes,
@@ -41,7 +43,6 @@ export default async ({ context, location }) => {
 
   return HTML({
     content,
-    context,
     extractor,
     introspectionQueryResultData,
     helmet,

@@ -5,11 +5,11 @@ import { renderRoutes } from 'react-router-config'
 import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from 'styled-components'
 
-export default ({ client, context, location, routes, store, theme }) => (
+export default ({ client, location, routes, store, theme }) => (
   <Provider store={store}>
     <ApolloProvider client={client}>
         <ThemeProvider theme={theme}>
-          <BrowserRouter location={location} context={context}>
+          <BrowserRouter location={location}>
             {renderRoutes(routes)}
           </BrowserRouter>
         </ThemeProvider>
