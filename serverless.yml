@@ -3,7 +3,7 @@ service: serverless-react-ssr
 frameworkVersion: '>=1.9.0 <2.0.0'
 
 custom:
-  stage: ${env:stage, self:provider.stage}
+  stage: ${opt:stage, self:provider.stage}
   client:
     bucketName: ${env:APP_DOMAIN_NAME}
     distributionFolder: dist

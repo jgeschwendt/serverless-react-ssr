@@ -24,7 +24,7 @@ build-server:
 build-static:
 	@docker run --env-file $(ENV_FILE) $(NODE_CONTAINER) yarn run build:static
 
-deploy:
+deploy-master:
 	@make stop-docker
 	@docker run --env-file .env.master $(NODE_CONTAINER) yarn run tsc
 	@docker run --env-file .env.master $(NODE_CONTAINER) yarn run tslint
