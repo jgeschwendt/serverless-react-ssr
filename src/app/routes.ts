@@ -1,16 +1,31 @@
+import loadable from '@loadable/component'
 import withTracker from './addons/withTracker'
-import Main, { One, Two } from './Root'
+import Main from './Root'
+
+const Home = loadable(() => import('./containers/Home'))
+const Page1 = loadable(() => import('./containers/Page1'))
+const Page2 = loadable(() => import('./containers/Page2'))
 
 const routes = [{
   component: Main,
   routes: [
     {
-      component: withTracker(One),
+      component: withTracker(Home),
       exact: true,
       path: '/'
     },
     {
-      component: withTracker(Two),
+      component: withTracker(Page1),
+      exact: true,
+      path: '/page1'
+    },
+    {
+      component: withTracker(Page2),
+      exact: true,
+      path: '/page2'
+    },
+    {
+      component: withTracker(Home),
       path: '/*'
     }
   ]

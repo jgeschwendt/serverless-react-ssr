@@ -1,9 +1,9 @@
 export default ({
   content,
   context,
+  extractor,
   helmet,
   introspectionQueryResultData,
-  loadable,
   sheet,
   state,
   store
@@ -26,7 +26,7 @@ export default ({
     window.__LAMBDA_STATE__=${JSON.stringify(context).replace(/</g, '\\u003c')};
     window.__REDUX_STATE__=${JSON.stringify(store.getState()).replace(/</g, '\\u003c')};
   `}</script>
-  ${loadable.getScriptTag()}
+  ${extractor.getScriptTags()}
   <script src="/static/vendors.js"></script>
   <script src="/static/main.js"></script>
 </body>

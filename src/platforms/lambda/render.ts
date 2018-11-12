@@ -1,4 +1,5 @@
-import { getLoadableState } from 'loadable-components/server'
+import { ChunkExtractor } from '@loadable/server'
+import { resolve } from 'path'
 import { createElement } from 'react'
 import { renderToStringWithData } from 'react-apollo'
 import { Helmet } from 'react-helmet'
@@ -19,13 +20,14 @@ export default async ({ context, location }) => {
   const store = createStore(reducer)
 
   await client.resetStore() // the cache persists between lambda requests
-
+  const extractor = new ChunkExtractor({ entrypoints: [], statsFile: resolve('.webpack/service/loadable-stats.json') })
   const sheet = new ServerStyleSheet()
-  const loadable = await getLoadableState(App as any)
+
   const content = await renderToStringWithData(
     createElement(App, {
       client,
       context,
+      extractor,
       location,
       routes,
       sheet: sheet.instance,
@@ -40,8 +42,8 @@ export default async ({ context, location }) => {
   return HTML({
     content,
     context,
+    extractor,
     introspectionQueryResultData,
-    loadable,
     helmet,
     sheet,
     state,

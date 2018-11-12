@@ -18,8 +18,11 @@ export NODE_CONTAINER = \
 	--workdir /var/task \
 	$(CONTAINER_NAME)
 
-build:
-	@docker run --env-file $(ENV_FILE) $(NODE_CONTAINER) yarn run build
+build-server:
+	@docker run --env-file $(ENV_FILE) $(NODE_CONTAINER) yarn run build:server
+
+build-static:
+	@docker run --env-file $(ENV_FILE) $(NODE_CONTAINER) yarn run build:static
 
 deploy:
 	@make stop-docker

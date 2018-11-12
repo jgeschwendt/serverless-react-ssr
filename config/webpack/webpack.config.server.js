@@ -1,3 +1,4 @@
+const LoadablePlugin = require('@loadable/webpack-plugin')
 const CircularDependencyPlugin = require('circular-dependency-plugin')
 const path = require('path')
 const slsw = require('serverless-webpack')
@@ -11,8 +12,9 @@ const config = {
   externals: [nodeExternals()],
   output: {
     filename: '[name].js',
-    libraryTarget: 'commonjs',
+    libraryTarget: 'commonjs2',
     path: path.resolve(process.cwd(), '.webpack'),
+    publicPath: '/static/'
   },
   module: {
     rules: [
@@ -43,24 +45,13 @@ const config = {
   plugins: [
     new webpack.NamedModulesPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
-    new CircularDependencyPlugin({
-      exclude: /node_modules/,
-      failOnError: process.env.NODE_ENV === 'production'
-    }),
+    new CircularDependencyPlugin({ exclude: /node_modules/, failOnError: true }),
+    new LoadablePlugin()
   ],
   resolve: {
-    extensions: [
-      '.gql',
-      '.graphql',
-      '.json',
-      '.ts',
-      '.tsx',
-    ],
-    modules: [
-      path.resolve(process.cwd(), 'node_modules'), 'node_modules',
-      'src/app'
-    ],
-  },
+    extensions: [ '.wasm', '.mjs', '.js', '.json', '.jsx', '.graphql', '.ts', '.tsx' ],
+    modules: [path.resolve(process.cwd(), 'node_modules'), 'node_modules']
+  }
 }
 
 // patch serverless-offline, lambda always returns :UTC for the TZ and is a reserved variable

@@ -1,7 +1,7 @@
 version: '3'
 services:
   website.server:
-    container_name: serverless-react.website.server
+    container_name: serverless-react-ssr.server
     command: yarn run start:server
     env_file:
       - ${ENV_FILE}
@@ -14,7 +14,7 @@ services:
     working_dir: /var/task
 
   website.static:
-    container_name: serverless-react.website.static
+    container_name: serverless-react-ssr.static
     command: yarn run start:static
     env_file:
       - ${ENV_FILE}

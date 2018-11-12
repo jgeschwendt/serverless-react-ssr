@@ -7,9 +7,9 @@
         ["@babel/typescript"]
       ],
       "plugins": [
+        ["@loadable/babel-plugin"],
         ["module-resolver", { "extensions": [".ts", ".tsx"], "root": ["./src"]}],
-        ["loadable-components/babel"],
-        ["styled-components", { "displayName": false, "preprocess": false, "ssr": true }]
+        ["styled-components", { "displayName": false }]
       ]
     },
     "production": {
@@ -19,9 +19,9 @@
         ["@babel/typescript"]
       ],
       "plugins": [
+        ["@loadable/babel-plugin"],
         ["module-resolver", { "extensions": [".ts", ".tsx"], "root": ["./src"]}],
-        ["loadable-components/babel"],
-        ["styled-components", { "displayName": false, "preprocess": false, "ssr": true }]
+        ["styled-components", { "displayName": false }]
       ]
     },
     "serverless": {
@@ -31,10 +31,9 @@
         ["@babel/typescript"]
       ],
       "plugins": [
+        ["@loadable/babel-plugin"],
         ["module-resolver", { "extensions": [".ts", ".tsx"], "root": ["./src"]}],
-        ["babel-plugin-dynamic-import-node"],
-        ["loadable-components/babel"],
-        ["styled-components", { "displayName": false, "preprocess": false, "ssr": true }]
+        ["styled-components", { "displayName": false }]
       ]
     }
   }
