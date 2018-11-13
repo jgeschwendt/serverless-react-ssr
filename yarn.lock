@@ -8021,10 +8021,10 @@ serverless-finch@2.3.2:
     minimatch "^3.0.4"
     prompt-confirm "^1.2.0"
 
-serverless-offline@3.31.1:
-  version "3.31.1"
-  resolved "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-3.31.1.tgz#45398ff2961b1a7f8bc54569e7a833bd8ea01596"
-  integrity sha512-dHWCSR0zlp6LxKt+2o+vIXyBpp5rcvBOzixXrgcwBeAEDWfPv0p4xtBUB9rbVclJAjxkQUG4JNxJN0ucjUtTDA==
+serverless-offline@3.31.3:
+  version "3.31.3"
+  resolved "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-3.31.3.tgz#ccab814cc97e59dc6cf6cfbcb5dd04ec5f1dc481"
+  integrity sha512-Nl42T+RMSYaI+AuSN/3bn2hIXFzU6l50Oiri6173xVoEEKeRdRwdMzBa83/YQA2DQgiIc4zGXHThhcpUVz0OPw==
   dependencies:
     "@babel/core" "^7.0.0"
     "@babel/register" "^7.0.0"
