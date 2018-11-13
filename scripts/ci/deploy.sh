@@ -15,6 +15,8 @@ if [ ${TRAVIS_BRANCH:-} == "master" ]; then
     --env APP_DOMAIN_NAME=$APP_DOMAIN_NAME \
     --env APP_HOSTED_ZONE=$APP_HOSTED_ZONE \
     --env APP_SSL_CERT_ARN=$APP_SSL_CERT_ARN \
+    --env BABEL_ENV=production \
+    --env NODE_ENV=production \
     --rm \
     --tty \
     --volume $TRAVIS_BUILD_DIR:/var/task \
@@ -29,11 +31,13 @@ if [ ${TRAVIS_BRANCH:-} == "master" ]; then
     --env APP_DOMAIN_NAME=$APP_DOMAIN_NAME \
     --env APP_HOSTED_ZONE=$APP_HOSTED_ZONE \
     --env APP_SSL_CERT_ARN=$APP_SSL_CERT_ARN \
+    --env BABEL_ENV=serverless \
+    --env NODE_ENV=production \
     --rm \
     --tty \
     --volume $TRAVIS_BUILD_DIR:/var/task \
     --workdir /var/task \
-    $CONTAINER_NAME serverless client deploy --no-confirm --stage master
+    $CONTAINER_NAME serverless deploy --stage master
 
   docker run \
     --env AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID \
@@ -47,7 +51,7 @@ if [ ${TRAVIS_BRANCH:-} == "master" ]; then
     --tty \
     --volume $TRAVIS_BUILD_DIR:/var/task \
     --workdir /var/task \
-    $CONTAINER_NAME serverless deploy --stage master
+    $CONTAINER_NAME serverless client deploy --no-confirm --stage master
 
   exit 0
 fi

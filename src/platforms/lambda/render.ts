@@ -20,10 +20,12 @@ export default async ({ location }) => {
   const statsFile = process.env.IS_OFFLINE
     ? resolve('.webpack/service/loadable-stats.json')
     : resolve('loadable-stats.json')
+
   const store = createStore(reducer)
   await client.resetStore() // the cache persists between lambda requests
 
   const extractor = new ChunkExtractor({ entrypoints: [], statsFile })
+
   const sheet = new ServerStyleSheet()
 
   const content = await renderToStringWithData(

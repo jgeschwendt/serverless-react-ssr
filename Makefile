@@ -28,9 +28,19 @@ deploy-master:
 	@make stop-docker
 	@docker run --env-file .env.master $(NODE_CONTAINER) yarn run tsc
 	@docker run --env-file .env.master $(NODE_CONTAINER) yarn run tslint
-	@docker run --env-file .env.master $(NODE_CONTAINER) yarn run build:static
-	@docker run --env-file .env.master $(NODE_CONTAINER) serverless deploy --stage master
-  @docker run --env-file .env.master $(NODE_CONTAINER) serverless client deploy --no-confirm --stage master
+	@docker run \
+		--env-file .env.master \
+		--env "BABEL_ENV=production" \
+		--env "NODE_ENV=production" \
+		$(NODE_CONTAINER) yarn run build:static
+	@docker run \
+		--env-file .env.master \
+		--env "BABEL_ENV=serverless" \
+		--env "NODE_ENV=production" \
+		$(NODE_CONTAINER) serverless deploy --stage master
+	@docker run \
+		--env-file .env.master \
+		$(NODE_CONTAINER) serverless client deploy --no-confirm --stage master
 
 check:
 	@make tsc

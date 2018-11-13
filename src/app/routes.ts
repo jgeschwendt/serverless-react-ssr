@@ -2,9 +2,13 @@ import loadable from '@loadable/component'
 import withTracker from './addons/withTracker'
 import Main from './Root'
 
-const Home = loadable(() => import('./containers/Home'))
-const Page1 = loadable(() => import('./containers/Page1'))
-const Page2 = loadable(() => import('./containers/Page2'))
+import Home from './containers/Home'
+import Page1 from './containers/Page1'
+import Page2 from './containers/Page2'
+
+// const Home = loadable(() => import('./containers/Home'))
+// const Page1 = loadable(() => import('./containers/Page1'))
+// const Page2 = loadable(() => import('./containers/Page2'))
 
 const routes = [{
   component: Main,
