@@ -139,12 +139,7 @@ resources:
                 method.response.header.Content-Length: integration.response.header.Content-Length
                 method.response.header.Content-Type: integration.response.header.Content-Type
             - StatusCode: 400
-              SelectionPattern: '400'
-              ResponseParameters:
-                method.response.header.Content-Length: integration.response.header.Content-Length
-                method.response.header.Content-Type: integration.response.header.Content-Type
-            - StatusCode: 404
-              SelectionPattern: '404'
+              SelectionPattern: '4\d{2}'
               ResponseParameters:
                 method.response.header.Content-Length: integration.response.header.Content-Length
                 method.response.header.Content-Type: integration.response.header.Content-Type
@@ -165,10 +160,6 @@ resources:
               method.response.header.Content-Length: integration.response.header.Content-Length
               method.response.header.Content-Type: integration.response.header.Content-Type
           - StatusCode: 400
-            ResponseParameters:
-              method.response.header.Content-Length: integration.response.header.Content-Length
-              method.response.header.Content-Type: integration.response.header.Content-Type
-          - StatusCode: 404
             ResponseParameters:
               method.response.header.Content-Length: integration.response.header.Content-Length
               method.response.header.Content-Type: integration.response.header.Content-Type
