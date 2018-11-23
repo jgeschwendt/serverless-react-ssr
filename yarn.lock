@@ -789,10 +789,10 @@
   dependencies:
     lodash "^4.17.11"
 
-"@loadable/webpack-plugin@5.0.2":
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/@loadable/webpack-plugin/-/webpack-plugin-5.0.2.tgz#6bcf32ed15a3c046fcdb53b76e03d0fb0f318a0c"
-  integrity sha512-ScK0vYvk2j3D9pQE54uVmKuuh3vzblyf0uWNHqE+Yp7Hrd7VvdmlbhRs0/lfk8l+RJBIh02rQGiphe7CAIPv9g==
+"@loadable/webpack-plugin@5.2.0":
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/@loadable/webpack-plugin/-/webpack-plugin-5.2.0.tgz#59506c15eaa15ffaf12246b7079fc741868cb9a5"
+  integrity sha512-tYgbP+KeV02ZlDkr+Bqm5zaP18FrJYL195+REdaQ36hPpdcN3hZmdSbQHViW7PkK2gpLHZr79c8HeTgDb6zIqQ==
 
 "@serverless/platform-sdk@^0.3.0":
   version "0.3.0"
