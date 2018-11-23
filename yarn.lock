@@ -782,10 +782,10 @@
   dependencies:
     hoist-non-react-statics "^3.1.0"
 
-"@loadable/server@5.1.3":
-  version "5.1.3"
-  resolved "https://registry.yarnpkg.com/@loadable/server/-/server-5.1.3.tgz#082c936468a3d2a46634956db198359814d56482"
-  integrity sha512-KKtABlX9lT/3TrPEj4jnV9Fzm3gkFjweZJOADW0006sbe1jpP1KSVdNAYjMMZUfbIzfUHK3fdaADElm860hlBg==
+"@loadable/server@5.2.0":
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/@loadable/server/-/server-5.2.0.tgz#0ba622ce31b81c49d1803eeb74467ba7111b1273"
+  integrity sha512-wKHvL0I0Ko7F6yIrr28nDsl1/rOy2bov8sYEvNKpsk4SLcJzBU0gBjYW8TCd5EWpF3sI80fpoQwW3NKCFx9NMw==
   dependencies:
     lodash "^4.17.11"
 
