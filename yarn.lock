@@ -8222,10 +8222,10 @@ serverless-webpack@5.2.0:
     semver "^5.5.0"
     ts-node "^3.2.0"
 
-serverless@1.36.0:
-  version "1.36.0"
-  resolved "https://registry.yarnpkg.com/serverless/-/serverless-1.36.0.tgz#b76695f7d2b1f60c4bd19b65d7431119dc31b333"
-  integrity sha512-qHcByzArkVEOrvOECjgXazEfovFgAHTx+LpSLtr5JbrbFH+ZXfcnt6UtAwd/T8JgMy9PfqhyuSKZ0GEeVKKPRw==
+serverless@1.36.1:
+  version "1.36.1"
+  resolved "https://registry.yarnpkg.com/serverless/-/serverless-1.36.1.tgz#908c2c414586231bdd061bf74d30196c1f08851e"
+  integrity sha512-C+1WUi+UP6z77IE9K5JksIJQ0Kbc4QdAwwlKXRdzqQKm0DAHtz3/aWv6/wprmaYX+hH6qXFMbabkDNm52leQ8A==
   dependencies:
     "@serverless/platform-sdk" "^0.3.0"
     archiver "^1.1.0"
