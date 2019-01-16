@@ -32,7 +32,7 @@
   "homepage": "https://github.com/jgeschwendt/serverless-react-ssr#readme",
   "private": true,
   "resolutions": {
-    "graphql": "14.1.0"
+    "graphql": "14.1.1"
   },
   "dependencies": {
     "@loadable/component": "5.2.2",
@@ -41,7 +41,7 @@
     "apollo-client": "2.4.8",
     "apollo-link-http": "1.5.9",
     "apollo-link-schema": "1.1.4",
-    "graphql": "14.1.0",
+    "graphql": "14.1.1",
     "graphql-tag": "2.10.0",
     "isomorphic-fetch": "2.2.1",
     "react": "16.7.0",
