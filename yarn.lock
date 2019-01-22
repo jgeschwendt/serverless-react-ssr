@@ -825,10 +825,10 @@
   dependencies:
     lodash "^4.17.11"
 
-"@loadable/webpack-plugin@5.4.0":
-  version "5.4.0"
-  resolved "https://registry.yarnpkg.com/@loadable/webpack-plugin/-/webpack-plugin-5.4.0.tgz#308ca702c071c61448ca8f824c12de643348955f"
-  integrity sha512-ajapZW6Ypj8YYh35vsgqdQvzQM/Xjd1Apq2xe68K8bGCYYCvg/Bjt9ZuRDoxiJmK6fNMuu0IZTFQYwwWpJ368A==
+"@loadable/webpack-plugin@5.5.0":
+  version "5.5.0"
+  resolved "https://registry.yarnpkg.com/@loadable/webpack-plugin/-/webpack-plugin-5.5.0.tgz#4d44812d3cc106b6278570fa4c8ebdeb07cc3549"
+  integrity sha512-/lW1JnDfxx7z9krS26eUvzuehlKDGB+VN9Vnf6Zu9fm4acyMqymAKHSeF/4LwluFsvFhqqLInrCCJGv9ZIZx8g==
 
 "@types/node@*":
   version "10.12.5"
