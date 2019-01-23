@@ -36,7 +36,7 @@
   },
   "dependencies": {
     "@loadable/component": "5.5.0",
-    "@loadable/server": "5.4.0",
+    "@loadable/server": "5.5.0",
     "apollo-cache-inmemory": "1.4.2",
     "apollo-client": "2.4.12",
     "apollo-link-http": "1.5.9",
