@@ -37,8 +37,8 @@
   "dependencies": {
     "@loadable/component": "5.6.0",
     "@loadable/server": "5.6.0",
-    "apollo-cache-inmemory": "1.4.2",
-    "apollo-client": "2.4.12",
+    "apollo-cache-inmemory": "1.4.3",
+    "apollo-client": "2.4.13",
     "apollo-link-http": "1.5.11",
     "apollo-link-schema": "1.1.6",
     "graphql": "14.1.1",
