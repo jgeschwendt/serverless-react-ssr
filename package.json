@@ -78,7 +78,7 @@
     "serverless-finch": "2.3.2",
     "serverless-offline": "3.33.0",
     "serverless-webpack": "5.2.0",
-    "tslint": "5.12.1",
+    "tslint": "5.13.0",
     "tslint-config-standard": "8.0.1",
     "tslint-loader": "3.6.0",
     "tslint-react": "3.6.0",
