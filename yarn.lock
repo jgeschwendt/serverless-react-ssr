@@ -828,10 +828,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/unitless/-/unitless-0.7.2.tgz#b180097bb44a40c3b59efea9cf28df2fe542d518"
   integrity sha512-mK4SHgIiJiwRZyenDXlaLUdR7vm8xUvJ4VYmpWNTDtF3ykEbI1XNVcbhAZwt07xjtCvLenoJMP8Eqx1FXvoWDQ==
 
-"@loadable/babel-plugin@5.6.0":
-  version "5.6.0"
-  resolved "https://registry.yarnpkg.com/@loadable/babel-plugin/-/babel-plugin-5.6.0.tgz#30b7713c29cbdcc64fba9ecb1bbb5a5340e30ff1"
-  integrity sha512-PiNCCF1HO1CaOgxFNpWJbPLsrl2NNVH4mOu0eovo+ADZtw4A6JayFG/OC1UaV3gmfhmogNvARJ9ZB4j0SbJbdw==
+"@loadable/babel-plugin@5.7.0":
+  version "5.7.0"
+  resolved "https://registry.yarnpkg.com/@loadable/babel-plugin/-/babel-plugin-5.7.0.tgz#dc6d3d517b065919aec56deb1fed9015332233f2"
+  integrity sha512-V8mSkMpa7ut+zc6NbF7Gw8B18nYWTz53jU218CH9qkvZFTKN+C2rGVuJU1CIRmC3t5Qh/aLYMOcYMSKtgu+n5g==
   dependencies:
     "@babel/plugin-syntax-dynamic-import" "^7.2.0"
 
