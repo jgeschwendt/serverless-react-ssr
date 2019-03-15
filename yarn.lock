@@ -4531,6 +4531,18 @@ history@^4.8.0-beta.0:
     tiny-warning "^1.0.0"
     value-equal "^0.4.0"
 
+history@^4.9.0:
+  version "4.9.0"
+  resolved "https://registry.yarnpkg.com/history/-/history-4.9.0.tgz#84587c2068039ead8af769e9d6a6860a14fa1bca"
+  integrity sha512-H2DkjCjXf0Op9OAr6nJ56fcRkTSNrUiv41vNJ6IswJjif6wlpZK0BTfFbi7qK9dXLSYZxkq5lBsj3vUjlYBYZA==
+  dependencies:
+    "@babel/runtime" "^7.1.2"
+    loose-envify "^1.2.0"
+    resolve-pathname "^2.2.0"
+    tiny-invariant "^1.0.2"
+    tiny-warning "^1.0.0"
+    value-equal "^0.4.0"
+
 hmac-drbg@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/hmac-drbg/-/hmac-drbg-1.0.1.tgz#d2745701025a6c775a6c545793ed502fc0c649a1"
@@ -7656,34 +7668,34 @@ react-redux@5.1.1:
     react-is "^16.6.0"
     react-lifecycles-compat "^3.0.0"
 
-react-router-config@4.4.0-beta.7:
-  version "4.4.0-beta.7"
-  resolved "https://registry.yarnpkg.com/react-router-config/-/react-router-config-4.4.0-beta.7.tgz#cd90d3074131a306d88eafa837a60ded7f0433d4"
-  integrity sha512-ws45ayyUe+0Yu+mlUZIYlXJOJWuPvImlnrGYiYFXEFqZT+DoquBON5Z0BL/yiC3STtsLHmIWa2/g/2Bvqf61dg==
+react-router-config@4.4.0-beta.8:
+  version "4.4.0-beta.8"
+  resolved "https://registry.yarnpkg.com/react-router-config/-/react-router-config-4.4.0-beta.8.tgz#164fff4e91afad2c83a0b97544d2981628613801"
+  integrity sha512-yWMc1VjrfuHqZzuDA0V4Orzwvu94OijmLCsUWCja2KyQRRk1FYmhfAFXbNovPkXyV8TJxbUwpY1pznlmqWdJfA==
   dependencies:
     "@babel/runtime" "^7.1.2"
 
-react-router-dom@4.4.0-beta.7:
-  version "4.4.0-beta.7"
-  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-4.4.0-beta.7.tgz#8c39da1a033f24d6ea07aab16cdd6f97623618bb"
-  integrity sha512-1yliPOTvc+V3IaI56PGqQD7fZnGD8I2iKOMmtvD8bUqgimYXPKsd6M7sKXFyjy/uk5bB+WBqECmNNcgiMjV9lQ==
+react-router-dom@4.4.0-beta.8:
+  version "4.4.0-beta.8"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-4.4.0-beta.8.tgz#bc85cb4bdc9347f5fe270f3e4555cd5038ae7a9f"
+  integrity sha512-7BvXPfOAu5t7Xbg42zlKfaWzNKWEL9Jd+/iPE4vafZChZ7qvIaaA3IsUeMc0M+6NDFSqtZl9f8nQKDdfcPthhg==
   dependencies:
     "@babel/runtime" "^7.1.2"
     history "^4.8.0-beta.0"
     loose-envify "^1.3.1"
     prop-types "^15.6.2"
-    react-router "^4.4.0-beta.7"
+    react-router "^4.4.0-beta.8"
     tiny-invariant "^1.0.2"
     tiny-warning "^1.0.0"
 
-react-router@4.4.0-beta.7, react-router@^4.4.0-beta.7:
-  version "4.4.0-beta.7"
-  resolved "https://registry.yarnpkg.com/react-router/-/react-router-4.4.0-beta.7.tgz#a60e0f97107dbb9005596a23cccf8779382425a6"
-  integrity sha512-9GdNnXq0tISw4LTKzjBWJ662nN2FqVr5lHi7YkxHJ3bHMSBjp3QiacsVwzeiSjo/KC+ZJcbQatja+rfAp1WHRw==
+react-router@4.4.0-beta.8, react-router@^4.4.0-beta.8:
+  version "4.4.0-beta.8"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-4.4.0-beta.8.tgz#6001c87bd191961adc25e84e495bb2bf4d62e59d"
+  integrity sha512-kt25GUhKCPqzyEnr0PH/o2GiimdJLvkqheP+pqRjFyiKPqgXjQVpiIsxUhMin+pheU8cqkQ3jjLprYhshd+WwQ==
   dependencies:
     "@babel/runtime" "^7.1.2"
     create-react-context "^0.2.2"
-    history "^4.8.0-beta.0"
+    history "^4.9.0"
     hoist-non-react-statics "^3.1.0"
     loose-envify "^1.3.1"
     path-to-regexp "^1.7.0"
