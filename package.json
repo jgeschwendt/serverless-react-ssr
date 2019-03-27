@@ -67,7 +67,7 @@
     "@loadable/webpack-plugin": "5.7.1",
     "@types/react": "16.8.10",
     "@types/react-dom": "16.0.10",
-    "aws-sdk": "2.429.0",
+    "aws-sdk": "2.430.0",
     "babel-loader": "8.0.5",
     "babel-plugin-module-resolver": "3.2.0",
     "babel-plugin-styled-components": "1.10.0",
