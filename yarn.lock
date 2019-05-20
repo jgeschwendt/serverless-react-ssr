@@ -8517,10 +8517,10 @@ serverless-finch@2.4.2:
     minimatch "^3.0.4"
     prompt-confirm "^1.2.0"
 
-serverless-offline@4.10.3:
-  version "4.10.3"
-  resolved "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-4.10.3.tgz#dcac3585a6fcb07fa205cadaf12934782d893f50"
-  integrity sha512-5N7BDsPu3B9dEvIB4l2ljZmzjug9bOF486ZzDczy5fL++09UCmLY5Mo+ye5K/mb6NCpe0IQD9zZoBHjgncRoXg==
+serverless-offline@4.10.5:
+  version "4.10.5"
+  resolved "https://registry.yarnpkg.com/serverless-offline/-/serverless-offline-4.10.5.tgz#7a7b003e50028efb88736914fa3859ce4221f287"
+  integrity sha512-Ci1TthlorjqauT4QWsnRAoGY3Jc4myXhF345QS2alLUC0mE54BnzO073hn0TzB0rflsfDc8SqpsWD4VoeDcwFg==
   dependencies:
     boom "^7.3.0"
     cryptiles "^4.1.3"
