@@ -56,7 +56,7 @@
     "redux": "4.0.1",
     "redux-form":"7.4.2",
     "sitemap": "2.2.0",
-    "styled-components": "4.2.0"
+    "styled-components": "4.2.1"
   },
   "devDependencies": {
     "@babel/core": "7.4.5",
