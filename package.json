@@ -55,7 +55,7 @@
     "react-router-dom": "5.0.1",
     "redux": "4.0.3",
     "redux-form":"7.4.2",
-    "sitemap": "2.2.0",
+    "sitemap": "3.2.2",
     "styled-components": "4.3.2"
   },
   "devDependencies": {
