@@ -35,7 +35,7 @@
     "graphql": "14.4.2"
   },
   "dependencies": {
-    "@loadable/component": "5.10.1",
+    "@loadable/component": "5.10.2",
     "@loadable/server": "5.9.0",
     "apollo-cache-inmemory": "1.6.2",
     "apollo-client": "2.6.3",
