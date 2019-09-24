@@ -1209,10 +1209,10 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@loadable/babel-plugin@5.10.0":
-  version "5.10.0"
-  resolved "https://registry.yarnpkg.com/@loadable/babel-plugin/-/babel-plugin-5.10.0.tgz#9d2b83649c910404214ae0da4c4a84a2a3f583ed"
-  integrity sha512-6hbsDIuHSjgATLK7m/Y7WwZ1t6vmZ22AYTtYsjK5L17KxiPm9v1hvUoheLs3jnDFUTHS6mgzD8vliZJdfsLLQA==
+"@loadable/babel-plugin@5.10.3":
+  version "5.10.3"
+  resolved "https://registry.yarnpkg.com/@loadable/babel-plugin/-/babel-plugin-5.10.3.tgz#faadbe38036b29e449640c3974acececbaeb5739"
+  integrity sha512-Izo4QX526f/Czvdot1izg0DtA5DfJEW5RUN28/9wt+62It4xKhVv9l0NNcTEL39xJXj7lsE4k5Z6eCBSETpHmw==
   dependencies:
     "@babel/plugin-syntax-dynamic-import" "^7.2.0"
 
