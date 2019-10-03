@@ -65,7 +65,7 @@
     "@babel/preset-typescript": "7.6.0",
     "@loadable/babel-plugin": "5.10.3",
     "@loadable/webpack-plugin": "5.7.1",
-    "@types/react": "16.9.4",
+    "@types/react": "16.9.5",
     "@types/react-dom": "16.9.1",
     "aws-sdk": "2.542.0",
     "babel-loader": "8.0.6",
