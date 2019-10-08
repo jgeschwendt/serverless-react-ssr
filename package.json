@@ -59,9 +59,9 @@
     "styled-components": "4.4.0"
   },
   "devDependencies": {
-    "@babel/core": "7.6.2",
-    "@babel/preset-env": "7.6.2",
-    "@babel/preset-react": "7.0.0",
+    "@babel/core": "7.6.3",
+    "@babel/preset-env": "7.6.3",
+    "@babel/preset-react": "7.6.3",
     "@babel/preset-typescript": "7.6.0",
     "@loadable/babel-plugin": "5.10.3",
     "@loadable/webpack-plugin": "5.7.1",
