@@ -425,13 +425,6 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.0.0"
 
-"@babel/plugin-syntax-dynamic-import@^7.2.0":
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-dynamic-import/-/plugin-syntax-dynamic-import-7.2.0.tgz#69c159ffaf4998122161ad8ebc5e6d1f55df8612"
-  integrity sha512-mVxuJ0YroI/h/tbFTPGZR8cv6ai+STMKNBq0f8hFxsxWjl94qqhsb+wXbpNMDPU3cfR1TIsVFzU3nXyZMqyK4w==
-  dependencies:
-    "@babel/helper-plugin-utils" "^7.0.0"
-
 "@babel/plugin-syntax-dynamic-import@^7.7.4":
   version "7.7.4"
   resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-dynamic-import/-/plugin-syntax-dynamic-import-7.7.4.tgz#29ca3b4415abfe4a5ec381e903862ad1a54c3aec"
@@ -1160,12 +1153,12 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
-"@loadable/babel-plugin@5.10.3":
-  version "5.10.3"
-  resolved "https://registry.yarnpkg.com/@loadable/babel-plugin/-/babel-plugin-5.10.3.tgz#faadbe38036b29e449640c3974acececbaeb5739"
-  integrity sha512-Izo4QX526f/Czvdot1izg0DtA5DfJEW5RUN28/9wt+62It4xKhVv9l0NNcTEL39xJXj7lsE4k5Z6eCBSETpHmw==
+"@loadable/babel-plugin@5.11.0":
+  version "5.11.0"
+  resolved "https://registry.yarnpkg.com/@loadable/babel-plugin/-/babel-plugin-5.11.0.tgz#3946865183202b64ff5d688549ec612957c54a01"
+  integrity sha512-d+U24IWBpxOh2DVr+pYkVLbxZXX6QaPekT390PVW2rOvxkZ68QUm5TSrOrTFifygSfFNfpJ/QclTQjyXBLqrLw==
   dependencies:
-    "@babel/plugin-syntax-dynamic-import" "^7.2.0"
+    "@babel/plugin-syntax-dynamic-import" "^7.7.4"
 
 "@loadable/component@5.10.3":
   version "5.10.3"
